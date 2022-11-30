@@ -28,12 +28,15 @@ function dobroTriploRaiz(numero) {
 
 function createEmail(fullName) {
   // escreva seu codigo aqui
+  const email = fullName.toLowerCase().split(' ').join('_');
+  return `${email}@aulao.com`;
 }
 
 // Requisito 05
 
 function getPoints(wins, ties, losses) {
   // escreva seu codigo aqui
+  return (wins * 7) + (ties * 3) + (losses * 0);
 }
 
 // Requisito 06
