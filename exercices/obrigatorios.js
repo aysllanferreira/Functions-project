@@ -120,6 +120,8 @@ function decodeLetter(letter) {
 
 function sumAndMultiplyBy2(numbers) {
   // escreva seu codigo aqui
+  const sumArray = numbers.reduce((acc, curr) => acc + curr);
+  return sumArray * 2;
 }
 
 // Requisito 10
