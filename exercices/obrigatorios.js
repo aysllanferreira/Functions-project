@@ -128,10 +128,14 @@ function sumAndMultiplyBy2(numbers) {
 
 function sumEvenNumbers(numbers) {
   // escreva seu codigo aqui
+  return numbers.filter((number) => number % 2 === 0)
+    .reduce((acc, curr) => acc + curr);
 }
 
 function sumOddNumbers(numbers) {
   // escreva seu codigo aqui
+  return numbers.filter((number) => number % 2 !== 0)
+    .reduce((acc, curr) => acc + curr);
 }
 
 module.exports = {
