@@ -1,0 +1,27 @@
+{
+  "name": "aulao-t29-functions-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "obrigatorios.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aysllanferreira/aulao-T29-Functions-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aysllanferreira/aulao-T29-Functions-project/issues"
+  },
+  "homepage": "https://github.com/aysllanferreira/aulao-T29-Functions-project#readme",
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^29.3.1"
+  }
+}
