@@ -104,14 +104,14 @@ npm test tests/ex01.spec.js
 
 <details>
   <summary>
-  Implemente a função <code>sameValues</code> com um programa que receba um valor em metros e o retorne convertido em centimetros.
+  Implemente a função <code>convertToCm</code> com um programa que receba um valor em metros e o retorne convertido em centimetros.
   </summary> <br />
 
 - O valor recebido por parametro será um valor em metros, converta ele para centimetros.
 
 **O que será testado:**
 
-- A função `layout`, receberá um valor em metros e deverá retornar o mesmo valor convertido em centímetros.
+- A função `convertToCm`, receberá um valor em metros e deverá retornar o mesmo valor convertido em centímetros.
 
 </details><br>
 
