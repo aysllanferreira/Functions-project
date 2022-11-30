@@ -18,6 +18,10 @@ function convertToCm(meters) {
 
 function dobroTriploRaiz(numero) {
   // escreva seu codigo aqui
+  const double = numero * 2;
+  const triple = numero * 3;
+  const squareRoot = Math.sqrt(numero);
+  return `O dobro de ${numero} é ${double}, o triplo é ${triple} e a raiz quadrada é ${squareRoot}`;
 }
 
 // Requisito 04
