@@ -2,6 +2,9 @@
 
 function sameValues(val1, val2) {
   // escreva seu codigo aqui
+  const getArray = [val1, val2];
+  const verifyNumbers = getArray.every((number) => number >= 6);
+  return verifyNumbers;
 }
 
 // Requisito 02
