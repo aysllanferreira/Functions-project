@@ -98,10 +98,22 @@ function polarEncoder(sentence) {
 
 function encodeLetter(letter) {
   // escreva seu codigo aqui
+  return letter
+    .replace(/a/gi, '@')
+    .replace(/e/gi, '3')
+    .replace(/i/gi, '!')
+    .replace(/o/gi, '0')
+    .replace(/u/gi, 'Ʉ');
 }
 
 function decodeLetter(letter) {
   // escreva seu codigo aqui
+  return letter
+    .replace(/@/gi, 'a')
+    .replace(/3/gi, 'e')
+    .replace(/!/gi, 'i')
+    .replace(/0/gi, 'o')
+    .replace(/Ʉ/gi, 'u');
 }
 
 // Requisito 09
