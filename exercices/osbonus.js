@@ -39,10 +39,12 @@ function salaryAdjustment(salary) {
 
 function highestNumber(array) {
   // escreva seu codigo aqui
+  return array.filter((number) => number === Math.max(...array)).length;
 }
 
 function lowestNumber(array) {
   // escreva seu codigo aqui
+  return array.filter((number) => number === Math.min(...array)).length;
 }
 
 module.exports = {
