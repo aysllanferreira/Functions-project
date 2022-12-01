@@ -23,7 +23,15 @@ Este projeto foi desenvolvido por Aysllan Ferreira, enquanto estudante na Trybe 
   * Envie seu e-mail respondendo esse forms [aqui](https://forms.gle/2w2pNDEUAJeJqFEp8).
   * Aguarde que em breve te enviarei um e-mail solicitando pra colaborar com o repositório.
   * Após ser aceit@, siga o padrão abaixo:
-	* Crie uma branch com seu nome, por exemplo: maria_fernanda_project.
+4. Crie uma branch a partir da branch `main`
+
+- Verifique que você está na branch `main`
+  - Exemplo: `git branch`
+- Se você não estiver, mude para a branch `main`
+  - Exemplo: `git checkout main`
+- Agora crie uma branch à qual você vai submeter os `commits` do seu projeto:
+  - Você deve criar uma branch no seguinte formato: `nome-sobrenome-nome-do-projeto`;
+  - Exemplo: `git checkout -b paulo-gomes-functions-project`
   * E depois dê o push e crie seu Pull Request.
 
 4. Importante!!!
