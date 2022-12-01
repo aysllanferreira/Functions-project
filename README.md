@@ -333,20 +333,20 @@ CPF Inválido
 <details>
   <summary>
   Implemente a função <code>salaryAdjustment</code> que seja capaz de fazer o reajuste salarial de um funcionário.
-  </summary> <br />
+  </summary> <br />
 
 - O programa deve receber o salário atual do funcionário e o reajuste em porcentagem.
 - Anualmente o funcionário recebe um reajuste anual fixo de `5%`.
 - O programa deve retornar o salário atual, o reajuste e o novo salário em `5 anos`.
 
 Exemplo de retorno:
- ```bash
+ ```bash
 Novo salário em 5 anos: R$ 1234.56
 ```
 
 **O que será testado:**
 
-- A função `salaryAdjustment`, deverá mostrar o valor atualizado do valor de um funcionário em 5 anos dado um valor passado por parâmetro.
+- A função `salaryAdjustment`, deverá mostrar o valor atualizado do valor de um funcionário em 5 anos dado um valor passado por parametro.
 
 </details><br>
 
