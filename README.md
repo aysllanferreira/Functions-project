@@ -22,7 +22,7 @@ Este projeto foi desenvolvido por Aysllan Ferreira, enquanto estudante na Trybe 
 
   * Envie seu e-mail respondendo esse forms [aqui](https://forms.gle/2w2pNDEUAJeJqFEp8).
   * Aguarde que em breve te enviarei um e-mail solicitando pra colaborar com o repositório.
-  
+
 4. Crie uma branch a partir da branch `main`
 
 - Verifique que você está na branch `main`
@@ -315,12 +315,12 @@ Exemplo: vamos para o hexa brasil = vimes ziti e hoxi btisan
 ```
 
 - O retorno deve ser nesse formato:
- ```bash
+```bash
 CPF: XXX.XXX.XXX-XX" (Onde X é um número).
 ```
 
 - Caso o CPF seja inválido, retorne:
- ```bash
+```bash
 CPF Inválido
 ```
 
