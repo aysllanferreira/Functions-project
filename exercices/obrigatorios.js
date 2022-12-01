@@ -24,7 +24,7 @@ function createEmail(fullName) {
 
 // Requisito 05
 
-function getPoints(wins, ties, losses) {
+function getPoints(wins, ties) {
   // escreva seu codigo aqui
 }
 
