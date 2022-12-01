@@ -18,10 +18,16 @@ Este projeto foi desenvolvido por Aysllan Ferreira, enquanto estudante na Trybe 
 
 	* Para isso, use o seguinte comando: `npm install`
 
-3. Crie sua branch e faça seu Pull Request, para também rodar os testes no avaliador.. 
+3. Para poder enviar seu Pull Request, caso queira um code review, siga o passo a passo. 
 
+  * Envie seu e-mail respondendo esse forms [aqui](https://forms.gle/2w2pNDEUAJeJqFEp8).
+  * Aguarde que em breve te enviarei um e-mail solicitando pra colaborar com o repositório.
+  * Após ser aceit@, siga o padrão abaixo:
 	* Crie uma branch com seu nome, por exemplo: maria_fernanda_project.
   * E depois dê o push e crie seu Pull Request.
+
+4. Importante!!!
+ * Não mude o nome de nenhuma função!
 	
 </details>
 
