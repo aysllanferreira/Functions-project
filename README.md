@@ -94,15 +94,15 @@ npm test tests/ex01.spec.js
   Implemente a função <code>sameValues</code> para criar um programa que receba dois números como parâmetro e retorne se eles são maiores ou igual a 6.
   </summary> <br />
 
-- Verifique se os dois valores passados por parametro sao maior ou igual a 6.
+- Verifique se os dois valores passados por parâmetro são maiores ou igual a 6.
 - Se sim, retorne a mensagem: true.
 - Se nao, retorne a mensagem: false.
 
 **O que será testado:**
 
-- A função `sameValues`, caso passado por parametro números maiores ou iguais a 6, retornará true.
+- A função `sameValues`, caso passado por parâmetro números maiores ou iguais a 6, retornará true.
 
-- A função `sameValues`, caso passado por parametro números menores ou iguais a 6, retornará false.
+- A função `sameValues`, caso passado por parâmetro números menores ou iguais a 6, retornará false.
 
 </details><br>
 
@@ -110,10 +110,10 @@ npm test tests/ex01.spec.js
 
 <details>
   <summary>
-  Implemente a função <code>convertToCm</code> com um programa que receba um valor em metros e o retorne convertido em centimetros.
+  Implemente a função <code>convertToCm</code> com um programa que receba um valor em metros e o retorne convertido em centímetros.
   </summary> <br />
 
-- O valor recebido por parametro será um valor em metros, converta ele para centimetros.
+- O valor recebido por parâmetro será um valor em metros, converta ele para centímetros.
 
 **O que será testado:**
 
@@ -125,7 +125,7 @@ npm test tests/ex01.spec.js
 
 <details>
   <summary>
-  Implemente a função <code>dobroTriploRaiz</code> com um programa que receba um numero e retorne seu dobro, triplo e raiz quadrada.
+  Implemente a função <code>dobroTriploRaiz</code> com um programa que receba um número e retorne seu dobro, triplo e raiz quadrada.
   </summary> <br />
 
 - O retorno deve ser no formato abaixo especificado.
@@ -135,7 +135,7 @@ npm test tests/ex01.spec.js
 
 **O que será testado:**
 
-- A função `dobroTriploRaiz`, deve retornar o dobro, triplo e a raiz quadrada do numero passado por parametro no formato especificado.
+- A função `dobroTriploRaiz`, deve retornar o dobro, triplo e a raiz quadrada do número passado por parâmetro no formato especificado.
 
 </details><br>
 
@@ -143,10 +143,10 @@ npm test tests/ex01.spec.js
 
 <details>
   <summary>
-  Implemente a função <code>createEmail</code> com uma funcao que receba um nome completo e retorne um email
+  Implemente a função <code>createEmail</code> com uma função que receba um nome completo e retorne um e-mail
   </summary> <br />
 
-- Crie uma funcao que receba um nome completo e retorne um email no seguinte formato:
+- Crie uma função que receba um nome completo e retorne um e-mail no seguinte formato:
 ```bash
 nome_sobrenome@aulao.com
 ```
@@ -154,7 +154,7 @@ nome_sobrenome@aulao.com
 
 **O que será testado:**
 
-- A função `createEmail`, deve retornar o email com o formato especificado dado um nome completo como parametro.
+- A função `createEmail`, deve retornar o e-mail com o formato especificado dado um nome completo como parâmetro.
 
 - A função `createEmail`, deve ter um retorno com todas as letras minúsculas.
 
@@ -167,8 +167,8 @@ nome_sobrenome@aulao.com
   Implemente a função <code>getPoints</code> que pede a somatória de pontos de um time no torneio de Quadribol.
   </summary> <br />
 
-- Na copa mundial de Quadribol, cada vitoria vale 7 pontos, cada empate 3 pontos e derrota 0 pontos
-- Escreva uma funcao que receba o numero de vitorias, empates e derrotas e retorne a pontuacao final.
+- Na copa mundial de Quadribol, cada vitória vale 7 pontos, cada empate 3 pontos e derrota 0 pontos
+- Escreva uma função que receba o numero de vitorias, empates e derrotas e retorne a pontuação final.
 
 **O que será testado:**
 
@@ -183,7 +183,7 @@ nome_sobrenome@aulao.com
   Implemente a função <code>sumMinMax</code> que deve somar o valor do maior número do array passado por parâmetro com o menor número.
   </summary> <br />
 
-- Deverá ser somado o valor do maior valor do array passado por parâmtro com o menor.
+- Deverá ser somado o valor do maior valor do array passado por parâmetro com o menor.
 ```bash
 MAIOR NUMERO + MENOS NUMERO = RESULTADO.
 ```
@@ -198,7 +198,7 @@ MAIOR NUMERO + MENOS NUMERO = RESULTADO.
 
 <details>
   <summary>
-  Implemente a função <code>polarEncoder</code> que codifica frase para o codigo Zenit Polar.
+  Implemente a função <code>polarEncoder</code> que codifica frase para o código Zenit Polar.
   </summary> <br />
 
 - Quando a letra for Z, troque por P.
@@ -220,7 +220,7 @@ Exemplo: vamos para o hexa brasil = vimes ziti e hoxi btisan
 
 **O que será testado:**
 
-- A função `polarEncoder`, recebendo uma frase como parametro, deve substituir cada letra com o que foi especificado acima criando assim um código de comunicação chamado Zenit Polar.
+- A função `polarEncoder`, recebendo uma frase como parâmetro, deve substituir cada letra com o que foi especificado acima, criando assim um código de comunicação chamado Zenit Polar.
 
 </details><br>
 
@@ -228,7 +228,7 @@ Exemplo: vamos para o hexa brasil = vimes ziti e hoxi btisan
 
 <details>
   <summary>
-  Implemente a função <code>encodeLetter</code> e <code>decodeLetter</code> que codifica e decodifica as vogais para o o codigo Aulao.
+  Implemente a função <code>encodeLetter</code> e <code>decodeLetter</code> que codifica e decodifica as vogais para o  código aulão.
   </summary> <br />
 
 - A função `encodeLetter` deve codificar as vogais com a seguinte regra:
@@ -253,7 +253,7 @@ Exemplo: vamos para o hexa brasil = vimes ziti e hoxi btisan
 
 **O que será testado:**
 
-- A função `encodeLetter`, deverá substituir as vogais da frase passada por parametro, pelo código especificado acima.
+- A função `encodeLetter`, deverá substituir as vogais da frase passada por parâmetro, pelo código especificado acima.
 
 - A função `decodeLetter`, deverá substituir uma frase codificada para as vogais novamente.
 
@@ -263,7 +263,7 @@ Exemplo: vamos para o hexa brasil = vimes ziti e hoxi btisan
 
 <details>
   <summary>
-  Implemente a função <code>sumAndMultiplyBy2</code> somando todos os valores de um array de numeros e retorne o valor multiplicado por 2
+  Implemente a função <code>sumAndMultiplyBy2</code> somando todos os valores de um array de números e retorne o valor multiplicado por 2
   </summary> <br />
 
 - Deverá somar todos os números dentro de um array e retornar o valor multiplicado por 2.
@@ -278,17 +278,17 @@ Exemplo: vamos para o hexa brasil = vimes ziti e hoxi btisan
 
 <details>
   <summary>
-  Implemente a função <code>sumEvenNumbers e sumOddNumbers</code> que receba um array de numeros e retorne a soma dos numeros pares e depois dos ímpares.
-  </summary> <br />
+  Implemente a função <code>sumEvenNumbers e sumOddNumbers</code> que receba um array de números e retorne a soma dos números pares e depois dos ímpares.
+  </summary> <br />
 
 - A primeira função deve retornar somente a soma dos números pares.
 - A segunda função deve retornar somente a soma dos números ímpares.
 
 **O que será testado:**
 
-- A função `sumEvenNumbers`, deverá retornar somente a soma dos números pares passados num array por parametro.
+- A função `sumEvenNumbers`, deverá retornar somente a soma dos números pares passados num array por parâmetro.
 
-- A função `sumOddNumbers`, deverá retornar somente a soma dos números impares passados num array por parametro.
+- A função `sumOddNumbers`, deverá retornar somente a soma dos números impares passados num array por parâmetro.
 
 </details><br>
 
@@ -298,8 +298,8 @@ Exemplo: vamos para o hexa brasil = vimes ziti e hoxi btisan
 
 <details>
   <summary>
-  Implemente a função <code>validateCPF</code> que receb um CPF como parâmetro e retorne se ele é válido ou não.
-  </summary> <br />
+  Implemente a função <code>validateCPF</code> que recebe um CPF como parâmetro e retorne se ele é válido ou não.
+  </summary> <br />
 
 - Lembre-se que o argumento passado sera testado no seguinte formato:
 ```bash
@@ -307,24 +307,24 @@ Exemplo: vamos para o hexa brasil = vimes ziti e hoxi btisan
 ```
 
 - O retorno deve ser nesse formato:
- ```bash
+ ```bash
 CPF: XXX.XXX.XXX-XX" (Onde X é um número).
 ```
 
 - Caso o CPF seja inválido, retorne:
- ```bash
+ ```bash
 CPF Inválido
 ```
 
 **O que será testado:**
 
-- A função `validateCPF`, receberá um array de números passado por parametro e deve retornar no formato especificado o CPF da pessoa caso for válido.
+- A função `validateCPF`, receberá um array de números passados por parâmetro e deve retornar no formato especificado o CPF da pessoa caso for válido.
 
-- A função `validateCPF`, caso contenha uma String dentro do Array passado por parametro deve retornar CPF Inválido.
+- A função `validateCPF`, caso contenha uma String dentro do Array passado por parâmetro, deve retornar CPF Inválido.
 
-- A função `validateCPF`, caso contenha um número maior do que 9 dentro do array passado por parametro deve retornar CPF Inválido.
+- A função `validateCPF`, caso contenha um número maior do que 9 dentro do array passado por parâmetro, deve retornar CPF Inválido.
 
-- A função `validateCPF`, caso contenha um número menor do que 0 dentro do array passado por parametro deve retornar CPF Inválido.
+- A função `validateCPF`, caso contenha um número menor do que 0 dentro do array passado por parâmetro, deve retornar CPF Inválido.
 
 </details><br>
 
@@ -333,20 +333,20 @@ CPF Inválido
 <details>
   <summary>
   Implemente a função <code>salaryAdjustment</code> que seja capaz de fazer o reajuste salarial de um funcionário.
-  </summary> <br />
+  </summary> <br />
 
 - O programa deve receber o salário atual do funcionário e o reajuste em porcentagem.
 - Anualmente o funcionário recebe um reajuste anual fixo de `5%`.
 - O programa deve retornar o salário atual, o reajuste e o novo salário em `5 anos`.
 
 Exemplo de retorno:
- ```bash
+ ```bash
 Novo salário em 5 anos: R$ 1234.56
 ```
 
 **O que será testado:**
 
-- A função `salaryAdjustment`, deverá mostrar o valor atualizado do valor de um funcionário em 5 anos dado um valor passado por parametro.
+- A função `salaryAdjustment`, deverá mostrar o valor atualizado do valor de um funcionário em 5 anos dado um valor passado por parâmetro.
 
 </details><br>
 
