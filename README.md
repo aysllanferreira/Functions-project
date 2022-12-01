@@ -85,7 +85,7 @@ npm test tests/ex01.spec.js
 
 <details>
   <summary>
-  Implemente a função <code>sameValues</code> para criar um programa que receba um CPF como parâmetro e retorne se ele é válido ou não
+  Implemente a função <code>sameValues</code> para criar um programa que receba dois números como parâmetro e retorne se eles são maiores ou igual a 6.
   </summary> <br />
 
 - Verifique se os dois valores passados por parametro sao maior ou igual a 6.
