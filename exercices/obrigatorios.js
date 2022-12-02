@@ -11,21 +11,27 @@ function sameValues(val1, val2) {
 // Requisito 02
 
 function convertToCm(meters) {
-  // escreva seu codigo aqui
+  return meters * 100;
 }
 
 // Requisito 03
 
 function dobroTriploRaiz(numero) {
-  // escreva seu codigo aqui
+  const dobro = numero * 2;
+  const triplo = numero * 3;
+  const raizQuadrada = Math. sqrt(numero);
+
+  return `O dobro de ${numero} é ${dobro}, o triplo é ${triplo} e a raiz quadrada é ${raizQuadrada}`
 }
 
 // Requisito 04
 
 function createEmail(fullName) {
-  // escreva seu codigo aqui
-}
 
+  const nome = fullName.toLowerCase().split(' ').join('_');
+
+  return `${nome}@aulao.com`
+}
 // Requisito 05
 
 function getPoints(wins, ties) {
