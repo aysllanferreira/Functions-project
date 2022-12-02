@@ -35,9 +35,18 @@ function createEmail(fullName) {
 // Requisito 05
 
 function getPoints(wins, ties) {
-  // escreva seu codigo aqui
-}
+  
+  let totalPoints = 0;
 
+  for (let index = 1; index <= wins; index += 1) {
+    totalPoints += 7;
+  }
+  for (let index = 1; index <= ties; index += 1) {
+    totalPoints += 3;
+  }
+
+  return totalPoints
+}
 // Requisito 06
 
 function sumMinMax(numbers) {
