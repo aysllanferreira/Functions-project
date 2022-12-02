@@ -1,7 +1,7 @@
 // Requisito 01
 
 function sameValues(val1, val2) {
-  // escreva seu codigo aqui
+  // escreva seu codigo aquid
 }
 
 // Requisito 02
