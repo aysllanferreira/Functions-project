@@ -19,7 +19,7 @@ function convertToCm(meters) {
 function dobroTriploRaiz(numero) {
   const dobro = numero * 2;
   const triplo = numero * 3;
-  const raizQuadrada = Math. sqrt(numero);
+  const raizQuadrada = Math.sqrt(numero);
 
   return `O dobro de ${numero} é ${dobro}, o triplo é ${triplo} e a raiz quadrada é ${raizQuadrada}`
 }
@@ -35,7 +35,7 @@ function createEmail(fullName) {
 // Requisito 05
 
 function getPoints(wins, ties) {
-  
+
   let totalPoints = 0;
 
   for (let index = 1; index <= wins; index += 1) {
@@ -67,9 +67,49 @@ function sumMinMax(numbers) {
 // Requisito 07
 
 function polarEncoder(sentence) {
-  // escreva seu codigo aqui
-}
 
+  let fraseCodificada = '';
+
+  for (let letter in sentence) {
+    switch (sentence[letter].toLowerCase()) {
+      case 'z':
+        fraseCodificada += 'p'
+        break;
+      case 'e':
+        fraseCodificada += 'o'
+        break;
+      case 'n':
+        fraseCodificada += 'l'
+        break;
+      case 'i':
+        fraseCodificada += 'a'
+        break;
+      case 't':
+        fraseCodificada += 'r'
+        break;
+      case 'p':
+        fraseCodificada += 'z'
+        break;
+      case 'o':
+        fraseCodificada += 'e'
+        break;
+      case 'l':
+        fraseCodificada += 'n'
+        break;
+      case 'a':
+        fraseCodificada += 'i'
+        break;
+      case 'r':
+        fraseCodificada += 't'
+        break;
+      default:
+        fraseCodificada += sentence[letter].toLowerCase();
+        break;
+    }
+  }
+
+  return fraseCodificada
+}
 // Requisito 08
 
 function encodeLetter(letter) {
