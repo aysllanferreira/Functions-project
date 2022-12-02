@@ -8,11 +8,11 @@ Este projeto foi desenvolvido por Aysllan Ferreira, enquanto estudante na Trybe 
 
 1. Clone o repositório
 
-	*  Use o comando: `git@github.com:aysllanferreira/aulao-T29-Functions-project.git`
+	*  Use o comando: `git@github.com:aysllanferreira/Functions-project.git`
 
 * Entre na pasta do repositório que você acabou de clonar:
 
-	*  `cd aulao-T29-Functions-project`
+	*  `cd Functions-project`
 
 2. Instale as dependências
 
