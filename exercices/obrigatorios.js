@@ -173,7 +173,14 @@ function decodeLetter(letter) {
 // Requisito 09
 
 function sumAndMultiplyBy2(numbers) {
-  // escreva seu codigo aqui
+
+  let soma = 0;
+
+  for (let value of numbers) {
+    soma += value;
+  }
+
+  return soma * 2
 }
 
 // Requisito 10
