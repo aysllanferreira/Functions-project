@@ -186,11 +186,27 @@ function sumAndMultiplyBy2(numbers) {
 // Requisito 10
 
 function sumEvenNumbers(numbers) {
-  // escreva seu codigo aqui
+
+  let sumEven = 0;
+
+  for (let value of numbers) {
+    if (value % 2 === 0) {
+      sumEven += value;
+    }
+  }
+  return sumEven
 }
 
 function sumOddNumbers(numbers) {
-  // escreva seu codigo aqui
+
+  let sumOdd = 0;
+
+  for (let value of numbers) {
+    if (value % 2 !== 0) {
+      sumOdd += value;
+    }
+  }
+  return sumOdd
 }
 
 module.exports = {
