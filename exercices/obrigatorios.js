@@ -1,7 +1,11 @@
 // Requisito 01
 
 function sameValues(val1, val2) {
-  // escreva seu codigo aquid
+  if (val1 >= 6 && val2 >= 6) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // Requisito 02
