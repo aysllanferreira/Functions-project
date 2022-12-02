@@ -107,17 +107,67 @@ function polarEncoder(sentence) {
         break;
     }
   }
-
   return fraseCodificada
 }
+
 // Requisito 08
 
 function encodeLetter(letter) {
-  // escreva seu codigo aqui
+
+  let fraseCodificada = '';
+
+  for (let index in letter) {
+    switch (letter[index].toUpperCase()) {
+      case 'A':
+        fraseCodificada += '@'
+        break;
+      case 'E':
+        fraseCodificada += '3'
+        break;
+      case 'I':
+        fraseCodificada += '!'
+        break;
+      case 'O':
+        fraseCodificada += '0'
+        break;
+      case 'U':
+        fraseCodificada += 'Ʉ'
+        break;
+      default:
+        fraseCodificada += letter[index];
+        break;
+    }
+  }
+  return fraseCodificada
 }
 
 function decodeLetter(letter) {
-  // escreva seu codigo aqui
+
+  let fraseCodificada = '';
+
+  for (let index in letter) {
+    switch (letter[index].toUpperCase()) {
+      case '@':
+        fraseCodificada += 'a'
+        break;
+      case '3':
+        fraseCodificada += 'e'
+        break;
+      case '!':
+        fraseCodificada += 'i'
+        break;
+      case '0':
+        fraseCodificada += 'o'
+        break;
+      case 'Ʉ':
+        fraseCodificada += 'u'
+        break;
+      default:
+        fraseCodificada += letter[index];
+        break;
+    }
+  }
+  return fraseCodificada
 }
 
 // Requisito 09
