@@ -40,10 +40,22 @@ function salaryAdjustment(salary) {
 
 function highestNumber(array) {
   // escreva seu codigo aqui
+  const getHigher = Math.max(...array);
+  let repeticao = 0;
+
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i] === getHigher) {
+      repeticao += 1;
+    }
+  }
+
+  return repeticao;
 }
 
 function lowestNumber(array) {
   // escreva seu codigo aqui
+  const getLowest = Math.min(...array);
+  return array.filter((numero) => numero === getLowest).length;
 }
 
 module.exports = {
