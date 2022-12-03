@@ -1,9 +1,7 @@
 // Requisito 01
 
-function sameValues(val1, val2) {
-  // escreva seu codigo aqui
-}
-
+let sameValues = (val1, val2) => (val1 >= 6, val2 < 6);
+console.log(sameValues(6,2));
 // Requisito 02
 
 function convertToCm(meters) {
