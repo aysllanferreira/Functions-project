@@ -97,17 +97,37 @@ function polarEncoder(sentence) {
 
 function encodeLetter(letter) {
   // escreva seu codigo aqui
+  return letter
+    .replace(/a/gi, '@')
+    .replace(/e/gi, '3')
+    .replace(/i/gi, '!')
+    .replace(/o/gi, '0')
+    .replace(/u/gi, 'Ʉ');
 }
 
 function decodeLetter(letter) {
   // escreva seu codigo aqui
+  return letter
+    .replace(/@/gi, 'a')
+    .replace(/3/gi, 'e')
+    .replace(/!/gi, 'i')
+    .replace(/0/gi, 'o')
+    .replace(/Ʉ/gi, 'u');
 }
 
 // Requisito 09
 
 function sumAndMultiplyBy2(numbers) {
   // escreva seu codigo aqui
+  // return numbers.reduce((contador, vAtual) => contador + vAtual) * 2;
+  let soma = 0;
+  for (let i = 0; i < numbers.length; i += 1) {
+    soma += numbers[i];
+  }
+  return soma * 2;
 }
+
+console.log(sumAndMultiplyBy2([1, 2, 3, 4, 5, 6]));
 
 // Requisito 10
 
