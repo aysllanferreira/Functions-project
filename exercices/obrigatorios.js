@@ -47,12 +47,50 @@ function sumMinMax(numbers) {
   return (Math.max(...numbers)) + (Math.min(...numbers));
 }
 
-console.log(sumMinMax([3, 2, 1, 4, 5]));
-
 // Requisito 07
 
 function polarEncoder(sentence) {
   // escreva seu codigo aqui
+  const polar = sentence.toLowerCase().split('');
+  const convertedSentence = [];
+
+  for (let i = 0; i < polar.length; i += 1) {
+    switch (polar[i]) {
+      case 'z':
+        convertedSentence.push('p');
+        break;
+      case 'e':
+        convertedSentence.push('o');
+        break;
+      case 'n':
+        convertedSentence.push('l');
+        break;
+      case 'i':
+        convertedSentence.push('a');
+        break;
+      case 't':
+        convertedSentence.push('r');
+        break;
+      case 'p':
+        convertedSentence.push('z');
+        break;
+      case 'o':
+        convertedSentence.push('e');
+        break;
+      case 'l':
+        convertedSentence.push('n');
+        break;
+      case 'a':
+        convertedSentence.push('i');
+        break;
+      case 'r':
+        convertedSentence.push('t');
+        break;
+      default:
+        convertedSentence.push(polar[i]);
+    }
+  }
+  return convertedSentence.join('');
 }
 
 // Requisito 08
