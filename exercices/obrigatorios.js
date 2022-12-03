@@ -44,7 +44,10 @@ function getPoints(wins, ties) {
 
 function sumMinMax(numbers) {
   // escreva seu codigo aqui
+  return (Math.max(...numbers)) + (Math.min(...numbers));
 }
+
+console.log(sumMinMax([3, 2, 1, 4, 5]));
 
 // Requisito 07
 
