@@ -127,17 +127,34 @@ function sumAndMultiplyBy2(numbers) {
   return soma * 2;
 }
 
-console.log(sumAndMultiplyBy2([1, 2, 3, 4, 5, 6]));
-
 // Requisito 10
 
 function sumEvenNumbers(numbers) {
   // escreva seu codigo aqui
+  const pares = [];
+  let soma = 0;
+
+  for (let i = 0; i < numbers.length; i += 1) {
+    if (numbers[i] % 2 === 0) {
+      pares.push(numbers[i]);
+    }
+  }
+
+  for (let i = 0; i < pares.length; i += 1) {
+    soma += pares[i];
+  }
+
+  return soma;
 }
 
 function sumOddNumbers(numbers) {
   // escreva seu codigo aqui
+  return numbers
+    .filter((numero) => numero % 2 === 1)
+    .reduce((contador, vAtual) => contador + vAtual);
 }
+
+console.log(sumOddNumbers([1, 2, 3, 4, 5, 6]));
 
 module.exports = {
   sameValues,
