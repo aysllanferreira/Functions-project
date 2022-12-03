@@ -38,11 +38,35 @@ console.log(salaryAdjustment(1000));
 // Requisito Bonus 03
 
 function highestNumber(array) {
-  // escreva seu codigo aqui
+
+  let highest = array[0]
+  let repetitions = 0;
+
+  for (let index in array) {
+    if (array[index] > highest) {
+      highest = array[index];
+      repetitions = 1;
+    } else if (array[index] === highest) {
+      repetitions += 1;
+    }
+  }
+  return repetitions
 }
 
 function lowestNumber(array) {
-  // escreva seu codigo aqui
+
+  let lowest = array[0]
+  let repetitions = 0;
+
+  for (let index in array) {
+    if (array[index] < lowest) {
+      lowest = array[index];
+      repetitions = 1;
+    } else if (array[index] === lowest) {
+      repetitions += 1;
+    }
+  }
+  return repetitions
 }
 
 module.exports = {
