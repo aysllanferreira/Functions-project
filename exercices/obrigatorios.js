@@ -33,12 +33,11 @@ function createEmail(fullName) {
   return `${fullName.replace(' ', '_').toLowerCase()}@aulao.com`;
 }
 
-// Aysllan Ferreira = aysllan_ferreira@aulao.com
-
 // Requisito 05
 
 function getPoints(wins, ties) {
   // escreva seu codigo aqui
+  return (wins * 7) + (ties * 3);
 }
 
 // Requisito 06
