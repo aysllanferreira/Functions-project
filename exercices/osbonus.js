@@ -22,13 +22,19 @@ function validateCPF(cpf) {
   return `CPF: ${cpfBlock1.join('')}.${cpfBlock2.join('')}.${cpfBlock3.join('')}-${cpfBlock4.join('')}`
 }
 
-console.log(validateCPF([1, 2, 3, 4, 3, 2, 1, 3, 2, 1, 4]));
 // Requisito Bonus 02
 
 function salaryAdjustment(salary) {
-  // escreva seu codigo aqui
-}
 
+  let adjustFiveYears = salary;
+
+  for (let x = 1; x <= 5; x += 1) {
+    adjustFiveYears = adjustFiveYears * 1.05;
+  }
+
+  return `Novo salário em 5 anos: R$ ${adjustFiveYears.toFixed(2)}`
+}
+console.log(salaryAdjustment(1000));
 // Requisito Bonus 03
 
 function highestNumber(array) {
