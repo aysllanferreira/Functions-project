@@ -31,6 +31,9 @@ function validateCPF(cpf) {
 
 function salaryAdjustment(salary) {
   // escreva seu codigo aqui
+  const reajuste = 5;
+  const fiveYearsSalary = salary * (1 + reajuste / 100) ** reajuste;
+  return `Novo salário em 5 anos: R$ ${fiveYearsSalary.toFixed(2)}`;
 }
 
 // Requisito Bonus 03
