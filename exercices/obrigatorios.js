@@ -42,6 +42,17 @@ function getPoints(wins, ties) {
 
 function sumMinMax(numbers) {
   // escreva seu codigo aqui
+  let maiorNumero = numbers[0];
+    let menorNumero = numbers[0];
+    for (let index = 0; index < numbers.length; index += 1){
+      if (menorNumero > numbers[index]) {
+        menorNumero = numbers[index];
+      }
+      if (maiorNumero < numbers[index]) {
+        maiorNumero = numbers[index];
+      }
+    }
+  return (maiorNumero + menorNumero);
 }
 
 // Requisito 07
