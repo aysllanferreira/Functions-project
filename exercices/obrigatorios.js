@@ -1,18 +1,22 @@
 // Requisito 01
 
-let sameValues = (val1, val2) => (val1 >= 6, val2 < 6);
+const sameValues = (val1, val2) => (val1 >= 6, val2 < 6);
 console.log(sameValues(6,2));
+
 // Requisito 02
 
-function convertToCm(meters) {
-  // escreva seu codigo aqui
-}
+const convertToCm = (meter) => (meter *= 100);
+console.log(convertToCm(1));
 
 // Requisito 03
 
-function dobroTriploRaiz(numero) {
-  // escreva seu codigo aqui
-}
+// const dobroTriploRaiz = (numero) => (num *= 2, num *= 3, Math.sqrt(x)) {
+//   4 *= 2 
+//  4 *= 3 
+//   Math.sqrt(4) 
+// };
+// console.log((2));
+ 
 
 // Requisito 04
 
