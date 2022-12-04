@@ -10,7 +10,8 @@ function sameValues(val1, val2) {
 // Requisito 02
 
 function convertToCm(meters) {
-  // escreva seu codigo aqui
+  const centimeters = meters * 100;
+  return centimeters;
 }
 
 // Requisito 03
