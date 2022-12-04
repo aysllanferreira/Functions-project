@@ -33,13 +33,16 @@ function createEmail(fullName) {
 // Requisito 05
 
 function getPoints(wins, ties) {
-  // escreva seu codigo aqui
+  const win = wins * 7;
+  const tie = ties * 3;
+  return win + tie;
 }
 
 // Requisito 06
 
 function sumMinMax(numbers) {
-  // escreva seu codigo aqui
+  const sumbiglow = Math.max(...numbers) + Math.min(...numbers);
+  return sumbiglow;
 }
 
 // Requisito 07
