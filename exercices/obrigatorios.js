@@ -9,12 +9,17 @@ function sameValues(val1, val2) {
 
 function convertToCm(meters) {
   // escreva seu codigo aqui
+  return (meters * 100);
 }
 
 // Requisito 03
 
 function dobroTriploRaiz(numero) {
   // escreva seu codigo aqui
+  const dobro = numero * 2;
+  const triplo = numero * 3;
+  const raiz = numero ** 0.5;
+  return `O dobro de ${numero} é ${dobro}, o triplo é ${triplo} e a raiz quadrada é ${raiz}`;
 }
 
 // Requisito 04
