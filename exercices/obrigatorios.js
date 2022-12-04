@@ -26,7 +26,8 @@ function dobroTriploRaiz(numero) {
 // Requisito 04
 
 function createEmail(fullName) {
-  // escreva seu codigo aqui
+  const mail = fullName.split(' ').join('_');
+  return `${mail}@aulao.com`;
 }
 
 // Requisito 05
