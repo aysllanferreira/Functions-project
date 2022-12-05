@@ -102,10 +102,60 @@ function polarEncoder(sentence) {
 
 function encodeLetter(letter) {
   // escreva seu codigo aqui
+  const convertLetter = letter.split('');
+  const encoded = [];
+  for (let i = 0; i <= convertLetter.length; i += 1) {
+    switch (convertLetter[i]) {
+      case 'a':
+        encoded.push('@');
+        break;
+      case 'e':
+        encoded.push('3');
+        break;
+      case 'i':
+        encoded.push('!');
+        break;
+      case 'o':
+        encoded.push('0');
+        break;
+      case 'u':
+        encoded.push('Ʉ');
+        break;
+      default:
+        encoded.push(convertLetter[i]);
+    }
+  }
+
+  return encoded.join('');
 }
 
 function decodeLetter(letter) {
   // escreva seu codigo aqui
+  const convertLetter = letter.split('');
+  const decoded = [];
+  for (let i = 0; i <= convertLetter.length; i += 1) {
+    switch (convertLetter[i]) {
+      case '@':
+        decoded.push('a');
+        break;
+      case '3':
+        decoded.push('e');
+        break;
+      case '!':
+        decoded.push('i');
+        break;
+      case '0':
+        decoded.push('o');
+        break;
+      case 'Ʉ':
+        decoded.push('u');
+        break;
+      default:
+        decoded.push(convertLetter[i]);
+    }
+  }
+
+  return decoded.join('');
 }
 
 // Requisito 09
