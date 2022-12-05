@@ -31,6 +31,7 @@ function dobroTriploRaiz(numero) {
 
 function createEmail(fullName) {
   // escreva seu codigo aqui
+  return `${fullName.replace(' ', '_').toLowerCase()}@aulao.com`
 }
 
 // Requisito 05
