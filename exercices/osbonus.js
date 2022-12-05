@@ -30,8 +30,10 @@ const blockFour = cpf.slice(9, 11);
 
 function salaryAdjustment(salary) {
   // escreva seu codigo aqui
-  const percentSalary = 5;
-  const fiveYearsSalary = salary * (1+ percentSalary / 100) ** percentSalary;
+  let fiveYearsSalary = salary;
+  for (let index = 1; index <= 5; index +=1) {
+    fiveYearsSalary = fiveYearsSalary * 1.05;
+  } 
   return `Novo salário em 5 anos: R$ ${fiveYearsSalary.toFixed(2)}`
 }
 
@@ -40,6 +42,7 @@ function salaryAdjustment(salary) {
 function highestNumber(array) {
   // escreva seu codigo aqui
 }
+
 
 function lowestNumber(array) {
   // escreva seu codigo aqui
