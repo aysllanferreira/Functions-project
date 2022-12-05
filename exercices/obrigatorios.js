@@ -2,81 +2,92 @@
 
 function sameValues(val1, val2) {
   // escreva seu codigo aqui
+  if (val1 >= 6 && val2 >= 6) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-// Requisito 02
+  // Requisito 02
 
-function convertToCm(meters) {
-  // escreva seu codigo aqui
-}
+  function convertToCm(meters) {
+    // escreva seu codigo aqui
+    return meters * 100;
+  }
 
-// Requisito 03
+  // Requisito 03
 
-function dobroTriploRaiz(numero) {
-  // escreva seu codigo aqui
-}
+  function dobroTriploRaiz(numero) {
+    // escreva seu codigo aqui
+    let dobro = numero * 2;
+    let triplo = numero * 3;
+    let raiz = Math.sqrt(numero);
 
-// Requisito 04
+    return `O dobro de ${numero} é ${dobro}, o triplo é ${triplo} e a raiz quadrada é ${raiz}`;
+  }
 
-function createEmail(fullName) {
-  // escreva seu codigo aqui
-}
+  // Requisito 04
 
-// Requisito 05
+  function createEmail(fullName) {
+    // escreva seu codigo aqui
+  }
 
-function getPoints(wins, ties) {
-  // escreva seu codigo aqui
-}
+  // Requisito 05
 
-// Requisito 06
+  function getPoints(wins, ties) {
+    // escreva seu codigo aqui
+  }
 
-function sumMinMax(numbers) {
-  // escreva seu codigo aqui
-}
+  // Requisito 06
 
-// Requisito 07
+  function sumMinMax(numbers) {
+    // escreva seu codigo aqui
+  }
 
-function polarEncoder(sentence) {
-  // escreva seu codigo aqui
-}
+  // Requisito 07
 
-// Requisito 08
+  function polarEncoder(sentence) {
+    // escreva seu codigo aqui
+  }
 
-function encodeLetter(letter) {
-  // escreva seu codigo aqui
-}
+  // Requisito 08
 
-function decodeLetter(letter) {
-  // escreva seu codigo aqui
-}
+  function encodeLetter(letter) {
+    // escreva seu codigo aqui
+  }
 
-// Requisito 09
+  function decodeLetter(letter) {
+    // escreva seu codigo aqui
+  }
 
-function sumAndMultiplyBy2(numbers) {
-  // escreva seu codigo aqui
-}
+  // Requisito 09
 
-// Requisito 10
+  function sumAndMultiplyBy2(numbers) {
+    // escreva seu codigo aqui
+  }
 
-function sumEvenNumbers(numbers) {
-  // escreva seu codigo aqui
-}
+  // Requisito 10
 
-function sumOddNumbers(numbers) {
-  // escreva seu codigo aqui
-}
+  function sumEvenNumbers(numbers) {
+    // escreva seu codigo aqui
+  }
 
-module.exports = {
-  sameValues,
-  convertToCm,
-  dobroTriploRaiz,
-  createEmail,
-  getPoints,
-  sumMinMax,
-  polarEncoder,
-  encodeLetter,
-  decodeLetter,
-  sumAndMultiplyBy2,
-  sumEvenNumbers,
-  sumOddNumbers,
-};
+  function sumOddNumbers(numbers) {
+    // escreva seu codigo aqui
+  }
+
+  module.exports = {
+    sameValues,
+    convertToCm,
+    dobroTriploRaiz,
+    createEmail,
+    getPoints,
+    sumMinMax,
+    polarEncoder,
+    encodeLetter,
+    decodeLetter,
+    sumAndMultiplyBy2,
+    sumEvenNumbers,
+    sumOddNumbers,
+  };
