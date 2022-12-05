@@ -104,16 +104,65 @@ function polarEncoder(sentence) {
 
 function encodeLetter(letter) {
   // escreva seu codigo aqui
+  let separa = [];
+  separa = letter.split('');
+  for (let index = 0; index < separa.length; index += 1) {
+    // eslint-disable-next-line default-case
+    switch (separa[index].toString().toLowerCase('')) {
+      case 'a':
+        separa[index] = '@';
+        break;
+      case 'e':
+        separa[index] = '3';
+        break;
+      case 'i':
+        separa[index] = '!';
+        break;
+      case 'o':
+        separa[index] = '0';
+        break;
+      case 'u':
+        separa[index] = 'Ʉ';
+        break;
+    }
+  }
+  separa = separa.join('');
+  return separa;
 }
 
 function decodeLetter(letter) {
   // escreva seu codigo aqui
+  let separa = [];
+  separa = letter.split('');
+  for (let index = 0; index < separa.length; index += 1) {
+    // eslint-disable-next-line default-case
+    switch (separa[index]) {
+      case '@':
+        separa[index] = 'a';
+        break;
+      case '3':
+        separa[index] = 'e';
+        break;
+      case '!':
+        separa[index] = 'i';
+        break;
+      case '0':
+        separa[index] = 'o';
+        break;
+      case 'Ʉ':
+        separa[index] = 'u';
+        break;
+    }
+  }
+  separa = separa.join('');
+  return separa;
 }
 
 // Requisito 09
 
 function sumAndMultiplyBy2(numbers) {
   // escreva seu codigo aqui
+  
 }
 
 // Requisito 10

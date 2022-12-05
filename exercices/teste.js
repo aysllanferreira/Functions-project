@@ -1,43 +1,29 @@
-
-function polarEncoder(sentence) {
-    // escreva seu codigo aqui
-    let separar = [];
-    separar = sentence.split('');
-    for (let index = 0; index < separar.length; index += 1){
-       switch(separar[index]){
-        case 'z':
-            separar[index] = 'p';
+function decodeLetter(letter) {
+  // escreva seu codigo aqui
+  console.log(letter);
+  let separa = [];
+  separa = letter.split('');
+  for (let index = 0; index < separa.length; index += 1) {
+    // eslint-disable-next-line default-case
+    switch (separa[index]) {
+      case '@':
+        separa[index] = 'a';
         break;
-        case 'e':
-            separar[index] = 'o';
+      case '3':
+        separa[index] = 'e';
         break;
-        case 'n':
-            separar[index] = 'l';
+      case '!':
+        separa[index] = 'i';
         break;
-        case 'i':
-            separar[index] = 'a';
+      case '0':
+        separa[index] = 'o';
         break;
-        case 't':
-            separar[index] = 'r';
+      case 'Ʉ':
+        separa[index] = 'u';
         break;
-        case 'p':
-            separar[index] = 'z';
-        break;
-        case 'o':
-            separar[index] = 'e';
-        break;
-        case 'l':
-            separar[index] = 'n';
-        break;
-        case 'a':
-            separar[index] = 'i';
-        break;
-        case 'r':
-            separar[index] = 't';
-        break;
-       }
     }
-    separar = separar.join('');
-    return separar.toString().toLowerCase('');
   }
-  console.log(polarEncoder('Vamos para o hexa brasil'));
+  separa = separa.join('');
+  return separa;
+}
+console.log(decodeLetter('3Ʉ s3mpr3 v0Ʉ 3st@r @qɄ!'));
