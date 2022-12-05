@@ -38,6 +38,8 @@ function createEmail(fullName) {
 
 function getPoints(wins, ties) {
   // escreva seu codigo aqui
+  const result = (wins * 7) + (ties * 3);
+  return result;
 }
 
 // Requisito 06
