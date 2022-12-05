@@ -2,25 +2,56 @@
 
 function sameValues(val1, val2) {
   // escreva seu codigo aqui
+  if (val1 >= 6 && val2 >= 6) {
+    return true;
+  }
+  return false;
 }
+
+// Testes básicos
+// console.log(sameValues(6, 6));
+// console.log(sameValues(6, 7));
+// console.log(sameValues(6, 5));
 
 // Requisito 02
 
 function convertToCm(meters) {
   // escreva seu codigo aqui
+  return (meters * 100);
 }
+
+// Testes básicos
+// console.log(convertToCm(10));
 
 // Requisito 03
 
 function dobroTriploRaiz(numero) {
   // escreva seu codigo aqui
+  return (`O dobro de ${numero} é ${numero * 2}, o triplo é ${numero * 3} e a raiz quadrada é ${Math.sqrt(numero)}`);
 }
+
+// Testes básicos
+// console.log(dobroTriploRaiz(2));
+// console.log(dobroTriploRaiz(4));
+// console.log(dobroTriploRaiz(16));
+// console.log(dobroTriploRaiz(100));
+// console.log(dobroTriploRaiz(2500));
 
 // Requisito 04
 
 function createEmail(fullName) {
   // escreva seu codigo aqui
+  const splitLowerName = fullName.toLowerCase().split(' ');
+  return (`${splitLowerName[0]}_${splitLowerName[splitLowerName.length - 1]}@aulao.com`);
 }
+
+// Testes básicos
+// console.log(createEmail('Ítalo Tobias de Souza Dantas'));
+
+/*
+const texto = 'Ítalo Tobias de Souza Dantas';
+console.log(texto.normalize('NFD').replace(/[\u0300-\u036f]/g, ''));
+*/
 
 // Requisito 05
 
