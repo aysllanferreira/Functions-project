@@ -2,9 +2,9 @@
 
 function sameValues(val1, val2) {
   // escreva seu codigo aqui
-  if(val1 >= 6 && val2 >= 6){
+  if (val1 >= 6 && val2 >= 6) {
     return true;
-  }else{
+  } else {
     return false;
   }
 }
@@ -23,7 +23,7 @@ function dobroTriploRaiz(numero) {
   const dobro = numero * 2;
   const triplo = numero * 3;
   const raiz = Math.sqrt(numero);
-  
+
   return `O dobro de ${numero} é ${dobro}, o triplo é ${triplo} e a raiz quadrada é ${raiz}`
 }
 
@@ -55,6 +55,47 @@ function sumMinMax(numbers) {
 
 function polarEncoder(sentence) {
   // escreva seu codigo aqui
+  
+  const convertSentence = sentence.toLowerCase().split('');
+  const newSentence = [];
+  
+  for (let index = 0; index <= convertSentence.length; index += 1) {
+    switch (convertSentence[index]) {
+      case 'z':
+        newSentence.push('p');
+        break;
+      case 'e':
+        newSentence.push('o');
+        break;
+      case 'n':
+        newSentence.push('l');
+        break;
+      case 'i':
+        newSentence.push('a');
+        break;
+      case 't':
+        newSentence.push('r');
+        break;
+      case 'p':
+        newSentence.push('z');
+        break;
+      case 'o':
+        newSentence.push('e');
+        break;
+      case 'l':
+        newSentence.push('n');
+        break;
+      case 'a':
+        newSentence.push('i');
+        break;
+      case 'r':
+        newSentence.push('t');
+        break;
+      default:
+        newSentence.push(convertSentence[index]);
+    }
+  }
+  return newSentence.join('');
 }
 
 // Requisito 08
