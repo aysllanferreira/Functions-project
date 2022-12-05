@@ -173,10 +173,38 @@ function sumAndMultiplyBy2(numbers) {
 
 function sumEvenNumbers(numbers) {
   // escreva seu codigo aqui
+  const evenNumbers = [];
+  let sum = 0;
+
+  for (let i = 0 ; i < numbers.length ; i += 1) {
+    if (numbers[i] % 2 === 0) {
+      evenNumbers.push(numbers[i])
+    }
+  }
+
+  for (let i = 0 ; i < evenNumbers.length ; i += 1) {
+    sum += evenNumbers[i];
+  }
+
+  return sum;
 }
 
 function sumOddNumbers(numbers) {
   // escreva seu codigo aqui
+  const oddNumbers = [];
+  let sum = 0;
+
+  for (let i = 0 ; i < numbers.length ; i += 1) {
+    if (numbers[i] % 2 !== 0) {
+      oddNumbers.push(numbers[i])
+    }
+  }
+
+  for (let i = 0 ; i < oddNumbers.length ; i += 1) {
+    sum += oddNumbers[i];
+  }
+
+  return sum;
 }
 
 module.exports = {
