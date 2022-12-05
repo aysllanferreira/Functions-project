@@ -2,7 +2,16 @@
 
 function sameValues(val1, val2) {
   // escreva seu codigo aqui
+  if (val1 >= 6 && val2 >= 6) {
+    return true;
+  }
+  return false;
 }
+
+// // Testes básicos
+// console.log(sameValues(6, 6));
+// console.log(sameValues(6, 7));
+// console.log(sameValues(6, 5));
 
 // Requisito 02
 
