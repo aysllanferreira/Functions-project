@@ -30,6 +30,9 @@ const blockFour = cpf.slice(9, 11);
 
 function salaryAdjustment(salary) {
   // escreva seu codigo aqui
+  const percentSalary = 5;
+  const fiveYearsSalary = salary * (1+ percentSalary / 100) ** percentSalary;
+  return `Novo salário em 5 anos: R$ ${fiveYearsSalary.toFixed(2)}`
 }
 
 // Requisito Bonus 03
