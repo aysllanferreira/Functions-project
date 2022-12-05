@@ -162,6 +162,11 @@ function decodeLetter(letter) {
 
 function sumAndMultiplyBy2(numbers) {
   // escreva seu codigo aqui
+  let sum = 0;
+  for(let index = 0; index < numbers.length; index +=1){
+    sum += numbers[index];
+  }
+  return sum * 2;
 }
 
 // Requisito 10
