@@ -8,7 +8,7 @@ function sameValues(val1, val2) {
   return false;
 }
 
-// // Testes básicos
+// Testes básicos
 // console.log(sameValues(6, 6));
 // console.log(sameValues(6, 7));
 // console.log(sameValues(6, 5));
@@ -17,7 +17,11 @@ function sameValues(val1, val2) {
 
 function convertToCm(meters) {
   // escreva seu codigo aqui
+  return (meters * 100);
 }
+
+// Testes básicos
+// console.log(convertToCm(10));
 
 // Requisito 03
 
