@@ -41,11 +41,31 @@ function salaryAdjustment(salary) {
 
 function highestNumber(array) {
   // escreva seu codigo aqui
+  const maxNumber = Math.max(...array);
+  let repeat = 0;
+
+   for(let i = 0 ; i < array.length ; i += 1) {
+    if (array[i] === maxNumber) {
+      repeat += 1;
+    }
+   }
+
+  return repeat;
 }
 
 
 function lowestNumber(array) {
   // escreva seu codigo aqui
+  const minNumber = Math.min(...array);
+  let repeat = 0;
+  
+   for(let i = 0 ; i < array.length ; i += 1) {
+    if (array[i] === minNumber) {
+      repeat += 1;
+    }
+   }
+
+  return repeat;
 }
 
 module.exports = {
