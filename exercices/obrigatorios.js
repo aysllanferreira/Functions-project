@@ -65,17 +65,17 @@ function getPoints(wins, ties) {
 //   // escreva seu codigo aqui
 // }
 
-// // module.exports = {
-// //   sameValues,
-// //   convertToCm,
-// //   dobroTriploRaiz,
-// //   createEmail,
-// //   getPoints,
-// //   sumMinMax,
-// //   polarEncoder,
-// //   encodeLetter,
-// //   decodeLetter,
-// //   sumAndMultiplyBy2,
-// //   sumEvenNumbers,
-// //   sumOddNumbers,
-// // };
+module.exports = {
+  sameValues,
+  convertToCm,
+  dobroTriploRaiz,
+  createEmail,
+  getPoints,
+  sumMinMax,
+  polarEncoder,
+  encodeLetter,
+  decodeLetter,
+  sumAndMultiplyBy2,
+  sumEvenNumbers,
+  sumOddNumbers,
+};
