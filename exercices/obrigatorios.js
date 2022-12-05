@@ -13,6 +13,7 @@ function sameValues(val1, val2) {
 
 function convertToCm(meters) {
   // escreva seu codigo aqui
+  return meters * 100
 }
 
 // Requisito 03
