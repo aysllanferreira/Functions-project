@@ -20,12 +20,11 @@ console.log(dobroTriploRaiz(4));
  const createEmail = (fullName) => (`${fullName.replace(' ', '_').toLowerCase()}@aulao.com`);
  console.log(createEmail('raionara dantas'));
 
-
 // Requisito 05
 
 const getPoints = (wins, ties) => (wins * 7) + (ties * 3);
 
-console.log(((2) * 7) + ((2) * 3));
+console.log(getPoints(2, 2));
 
 // // Requisito 06
 
@@ -35,13 +34,13 @@ console.log(sumMinMax([3, 2, 5, 4, 7]));
 // Requisito 07
 // A partir da linha 40, faz um console.log e, no code, cria um array. Por isso faz um um for
 
-// const polarEncoder = (sentence) => sentence.toLowerCase().split('');
+const polarEncoder = (sentence) => sentence.toLowerCase().split('');
 
-//   for (let index = 0; index < sentence.length; index += 1) {
-//     console.log(sentence[index]);
-//   }
+  for (let index = 0; index < sentence.length; index += 1) {
+    console.log(sentence[index]);
+  }
 
-// console.log(polarEncoder('Brasil, hexa!'));
+console.log(polarEncoder('Brasil, hexa!'));
 
 // Requisito 08
 
