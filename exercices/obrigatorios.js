@@ -1,44 +1,46 @@
 // Requisito 01
 
-function sameValues(val1, val2) {
-  // escreva seu codigo aqui
-}
+const sameValues = (val1, val2) => (val1 >= 6, val2 < 6);
+console.log(sameValues(6,2));
 
 // Requisito 02
 
-function convertToCm(meters) {
-  // escreva seu codigo aqui
-}
+const convertToCm = (meter) => (meter *= 100);
+console.log(convertToCm(1));
 
 // Requisito 03
 
-function dobroTriploRaiz(numero) {
-  // escreva seu codigo aqui
-}
+const dobroTriploRaiz = (numero) => (`O dobro de ${numero}  é ${numero * 2}, o triplo é ${numero *3} e a raiz quadrada é ${Math.sqrt(numero)}.`);
+
+console.log(dobroTriploRaiz(4));
+ 
 
 // Requisito 04
 
-function createEmail(fullName) {
-  // escreva seu codigo aqui
-}
+ const createEmail = (fullName) => (`${fullName.replace(' ', '_').toLowerCase()}@aulao.com`);
+ console.log(createEmail('raionara dantas'));
 
 // Requisito 05
 
-function getPoints(wins, ties) {
-  // escreva seu codigo aqui
-}
+const getPoints = (wins, ties) => (wins * 7) + (ties * 3);
 
-// Requisito 06
+console.log(getPoints(2, 2));
 
-function sumMinMax(numbers) {
-  // escreva seu codigo aqui
-}
+// // Requisito 06
+
+const sumMinMax = (numbers) => Math.max(...numbers) + (Math.min(...numbers));
+console.log(sumMinMax([3, 2, 5, 4, 7]));
 
 // Requisito 07
+// A partir da linha 40, faz um console.log e, no code, cria um array. Por isso faz um um for
 
-function polarEncoder(sentence) {
-  // escreva seu codigo aqui
-}
+const polarEncoder = (sentence) => sentence.toLowerCase().split('');
+
+  for (let index = 0; index < sentence.length; index += 1) {
+    console.log(sentence[index]);
+  }
+
+console.log(polarEncoder('Brasil, hexa!'));
 
 // Requisito 08
 
