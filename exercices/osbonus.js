@@ -12,17 +12,34 @@ function validateCPF(cpf) {
 // Requisito Bonus 02
 
 function salaryAdjustment(salary) {
-  // escreva seu codigo aqui
+  const salaryCompost = salary * (1 + 0.05) ** 5;
+  return `Novo salário em 5 anos: R$ ${salaryCompost}`;
 }
 
 // Requisito Bonus 03
 
 function highestNumber(array) {
-  // escreva seu codigo aqui
+  const bigNumber = Math.max(...array);
+  let counter = 0;
+
+  for (let index = 0; index < array.length; index += 1) {
+    if (bigNumber === array[index]) {
+      counter += 1;
+    }
+  }
+  return counter;
 }
 
 function lowestNumber(array) {
-  // escreva seu codigo aqui
+  const minNumber = Math.min(...array);
+  let counter = 0;
+
+  for (let index = 0; index < array.length; index += 1) {
+    if (minNumber === array[index]) {
+      counter += 1;
+    }
+  }
+  return counter;
 }
 
 module.exports = {

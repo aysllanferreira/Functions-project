@@ -1,10 +1,12 @@
-function validateCPF(cpf) {
-  for (let index = 0; index < cpf.length; index += 1) {
-    if (cpf[index] < 0 || cpf[index] > 9 || typeof cpf[index] === 'string' || cpf.length > 11) {
-      return 'CPF Inválido';
+function highestNumber(array) {
+  const bigNumber = Math.max(...array);
+  let counter = 0;
+
+  for (let index = 0; index < array.length; index += 1) {
+    if (bigNumber === array[index]) {
+      counter += 1;
     }
   }
-  const cpfvalido = `CPF: ${cpf.slice(0, 3).join('')}.${cpf.slice(3, 6).join('')}.${cpf.slice(6, 9).join('')}-${cpf.slice(-2).join('')}`;
-  return cpfvalido;
+  return counter;
 }
-console.log(validateCPF([1, 2, 3, 4, 3, 2, 1, 3, 2, 5, 4]));
+console.log(highestNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]));
