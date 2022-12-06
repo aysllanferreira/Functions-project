@@ -13,7 +13,7 @@ function validateCPF(cpf) {
 
 function salaryAdjustment(salary) {
   const salaryCompost = salary * (1 + 0.05) ** 5;
-  return `Novo salário em 5 anos: R$ ${salaryCompost}`;
+  return `Novo salário em 5 anos: R$ ${salaryCompost.toFixed(2)}`;
 }
 
 // Requisito Bonus 03

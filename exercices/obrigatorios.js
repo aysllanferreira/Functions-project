@@ -1,7 +1,7 @@
 // Requisito 01
 
 function sameValues(val1, val2) {
-  if (val1 && val2 >= 6) {
+  if (val1 >= 6 && val2 >= 6) {
     return true;
   }
   return false;
@@ -20,7 +20,7 @@ function dobroTriploRaiz(numero) {
   const numdobro = numero * 2;
   const numtriplo = numero * 3;
   const numraiz = Math.sqrt(numero);
-  return `O dobro de ${numero} é ${numdobro}, o triplo é ${numtriplo}} e a raiz quadrada é ${numraiz}`;
+  return `O dobro de ${numero} é ${numdobro}, o triplo é ${numtriplo} e a raiz quadrada é ${numraiz}`;
 }
 
 // Requisito 04
@@ -83,18 +83,18 @@ function polarEncoder(sentence) {
 // Requisito 08
 
 function encodeLetter(letter) {
-  const letraMaior = letter.toUpperCase();
+  const letraMaior = letter;
   let enCode = '';
   for (let index = 0; index < letter.length; index += 1) {
-    if (letraMaior[index] === 'A') {
+    if (letraMaior[index] === 'a') {
       enCode += '@';
-    } else if (letraMaior[index] === 'E') {
+    } else if (letraMaior[index] === 'e') {
       enCode += '3';
-    } else if (letraMaior[index] === 'I') {
+    } else if (letraMaior[index] === 'i') {
       enCode += '!';
-    } else if (letraMaior[index] === 'O') {
+    } else if (letraMaior[index] === 'o') {
       enCode += '0';
-    } else if (letraMaior[index] === 'U') {
+    } else if (letraMaior[index] === 'u') {
       enCode += 'Ʉ';
     } else {
       enCode += letraMaior[index];
@@ -104,7 +104,7 @@ function encodeLetter(letter) {
 }
 
 function decodeLetter(letter) {
-  const letraMenor = letter.toLowerCase();
+  const letraMenor = letter;
   let enCode = '';
   for (let index = 0; index < letter.length; index += 1) {
     if (letraMenor[index] === '@') {
@@ -137,11 +137,23 @@ function sumAndMultiplyBy2(numbers) {
 // Requisito 10
 
 function sumEvenNumbers(numbers) {
-  // escreva seu codigo aqui
+  let sumArray = 0;
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] % 2 === 0) {
+      sumArray += numbers[index];
+    }
+  }
+  return sumArray;
 }
 
 function sumOddNumbers(numbers) {
-  // escreva seu codigo aqui
+  let sumArray = 0;
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] % 2 !== 0) {
+      sumArray += numbers[index];
+    }
+  }
+  return sumArray;
 }
 
 module.exports = {
