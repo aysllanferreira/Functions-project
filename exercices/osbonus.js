@@ -1,7 +1,12 @@
 // Requisito Bonus 01
 
 function validateCPF(cpf) {
-  // escreva seu codigo aqui
+  for (let index = 0; index < cpf.length; index += 1) {
+    if (cpf[index] < 0 || cpf[index] > 9 || typeof cpf[index] === 'string' || cpf.length > 11) {
+      return 'CPF Inválido';
+    }
+  }
+  return `CPF: ${cpf.slice(0, 3).join('')}.${cpf.slice(3, 6).join('')}.${cpf.slice(6, 9).join('')}-${cpf.slice(-2).join('')}`;
 }
 
 // Requisito Bonus 02

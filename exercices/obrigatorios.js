@@ -26,7 +26,7 @@ function dobroTriploRaiz(numero) {
 // Requisito 04
 
 function createEmail(fullName) {
-  const mail = fullName.split(' ').join('_');
+  const mail = fullName.toLowerCase().split(' ').join('_');
   return `${mail}@aulao.com`;
 }
 
@@ -83,17 +83,55 @@ function polarEncoder(sentence) {
 // Requisito 08
 
 function encodeLetter(letter) {
-  // escreva seu codigo aqui
+  const letraMaior = letter.toUpperCase();
+  let enCode = '';
+  for (let index = 0; index < letter.length; index += 1) {
+    if (letraMaior[index] === 'A') {
+      enCode += '@';
+    } else if (letraMaior[index] === 'E') {
+      enCode += '3';
+    } else if (letraMaior[index] === 'I') {
+      enCode += '!';
+    } else if (letraMaior[index] === 'O') {
+      enCode += '0';
+    } else if (letraMaior[index] === 'U') {
+      enCode += 'Ʉ';
+    } else {
+      enCode += letraMaior[index];
+    }
+  }
+  return enCode;
 }
 
 function decodeLetter(letter) {
-  // escreva seu codigo aqui
+  const letraMenor = letter.toLowerCase();
+  let enCode = '';
+  for (let index = 0; index < letter.length; index += 1) {
+    if (letraMenor[index] === '@') {
+      enCode += 'a';
+    } else if (letraMenor[index] === '3') {
+      enCode += 'e';
+    } else if (letraMenor[index] === '!') {
+      enCode += 'i';
+    } else if (letraMenor[index] === '0') {
+      enCode += 'o';
+    } else if (letraMenor[index] === 'Ʉ') {
+      enCode += 'u';
+    } else {
+      enCode += letraMenor[index];
+    }
+  }
+  return enCode;
 }
 
 // Requisito 09
 
 function sumAndMultiplyBy2(numbers) {
-  // escreva seu codigo aqui
+  let sumArray = 0;
+  for (let index = 0; index < numbers.length; index += 1) {
+    sumArray += numbers[index];
+  }
+  return sumArray * 2;
 }
 
 // Requisito 10

@@ -1,34 +1,10 @@
-function polarEncoder(sentence) {
-  const sentLow = sentence.toLowerCase();
-  const arrayZenit = sentLow.split('');
-  let zenitCod = '';
-
-  for (let index = 0; index < arrayZenit.length; index += 1) {
-    if (arrayZenit[index] === 'z') {
-      zenitCod += 'p';
-    } else if (arrayZenit[index] === 'e') {
-      zenitCod += 'o';
-    } else if (arrayZenit[index] === 'n') {
-      zenitCod += 'l';
-    } else if (arrayZenit[index] === 'i') {
-      zenitCod += 'a';
-    } else if (arrayZenit[index] === 't') {
-      zenitCod += 'r';
-    } else if (arrayZenit[index] === 'p') {
-      zenitCod += 'z';
-    } else if (arrayZenit[index] === 'o') {
-      zenitCod += 'e';
-    } else if (arrayZenit[index] === 'l') {
-      zenitCod += 'n';
-    } else if (arrayZenit[index] === 'a') {
-      zenitCod += 'i';
-    } else if (arrayZenit[index] === 'r') {
-      zenitCod += 't';
-    } else {
-      zenitCod += arrayZenit[index];
+function validateCPF(cpf) {
+  for (let index = 0; index < cpf.length; index += 1) {
+    if (cpf[index] < 0 || cpf[index] > 9 || typeof cpf[index] === 'string' || cpf.length > 11) {
+      return 'CPF Inválido';
     }
   }
-  return zenitCod;
+  const cpfvalido = `CPF: ${cpf.slice(0, 3).join('')}.${cpf.slice(3, 6).join('')}.${cpf.slice(6, 9).join('')}-${cpf.slice(-2).join('')}`;
+  return cpfvalido;
 }
-
-console.log(polarEncoder('vamos para o hexa brasil'));
+console.log(validateCPF([1, 2, 3, 4, 3, 2, 1, 3, 2, 5, 4]));
