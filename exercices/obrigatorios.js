@@ -162,17 +162,35 @@ function decodeLetter(letter) {
 
 function sumAndMultiplyBy2(numbers) {
   // escreva seu codigo aqui
-  
+  let soma = 0;
+  for (let index of numbers) {
+    soma += index;
+  }
+  return (soma * 2);
 }
 
 // Requisito 10
 
 function sumEvenNumbers(numbers) {
   // escreva seu codigo aqui
+  let soma = 0;
+  for (let index of numbers) {
+    if (index%2 == 0) {
+      soma += index;
+    }
+  }
+  return soma;
 }
 
 function sumOddNumbers(numbers) {
   // escreva seu codigo aqui
+  let soma = 0;
+  for (let index of numbers) {
+    if (index%2 != 0) {
+      soma += index;
+    }
+  }
+  return soma;
 }
 
 module.exports = {
